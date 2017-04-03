@@ -82,7 +82,7 @@ import mxnet.ndarray as nd
 
 X  = nd.zeros((10000, 40000), mx.cpu(0))           #Allocate an array to store 1000 datapoints (of 40k dimensions) that lives on the CPU
 W1 = nd.zeros(shape=(40000, 1024), mx.gpu(0))      #Allocate a 40k x 1024 weight matrix on GPU for the 1st layer of the net
-W2 = nd.zeros(shape=(1024, 10), mx.gpu(0))       #Allocate a 1024 x 1024 weight matrix on GPU for the 2nd layer of the net
+W2 = nd.zeros(shape=(1024, 10), mx.gpu(0))         #Allocate a 1024 x 1024 weight matrix on GPU for the 2nd layer of the net
 ~~~~
 
 <!-- * __Talk about how mxnet also makes it easy to assign a context (on which device the computation happens__ -->
