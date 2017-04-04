@@ -13,11 +13,13 @@ Please note that we observe the following additional conventions:
 Import Conventions
 --------
 In addition to importing::
+
   import numpy as np
   import matplotlib as mpl
   import matplotlib.pyplot as plt
 
 We also assume that mxnet has been imported in the following way::
+
   import mxnet as mx
 
 
