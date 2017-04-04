@@ -27,12 +27,9 @@ Variable names, functions, class names, and tuples of returned values
 ```````````````
 For variable names, function names, or class names, we observe the NumPy convention of presenting them in single backticks.
 
-However, whenever code is invoked, even to retrieve an attribute of an object, we present this in double backticks, e.g.,  ``x.attribute``. `NDArray`s. ``NDArray``.
+However, whenever code is invoked, even to retrieve an attribute of an object, we present this in double backticks, e.g.,  ``x.attribute``. 
 
-Note: NDArray is a class name. When standing alone (not in a code block) it should always appear in single backticks.
-
-To refer to multiple instances of a class, inclose the class name in single back ticks (but not the 's'). 
-
+Note: NDArray is a class name. When standing alone (not in a code block) it should always appear in single backticks. ``NDArray``s
 
 True, False, and None 
 ```````````````
