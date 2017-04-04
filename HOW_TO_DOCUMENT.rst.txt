@@ -29,7 +29,7 @@ For variable names, function names, or class names, we observe the NumPy convent
 
 However, whenever code is invoked, even to retrieve an attribute of an object, we present this in double backticks, e.g.,  ``x.attribute``.
 
-True, False, and None literals
+True, False, and None 
 --------
 Throughout the NumPy documentation there appears to be disagreement about whether boolean literals (``True`` and ``False``) or the special value ``None`` should appear with zero, single, or double backticks. 
 
