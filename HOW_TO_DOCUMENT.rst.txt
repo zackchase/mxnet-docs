@@ -31,12 +31,15 @@ However, whenever code is invoked, even to retrieve an attribute of an object, w
 
 Note: NDArray is a class name. When standing alone (not in a code block) it should always appear in single backticks.
 
+To refer to multiple instances of a class, inclose the class name in single back ticks (but not the 's'). 
+Example: a list of `NDArray`s,
+
+
 True, False, and None 
 ```````````````
 Throughout the NumPy documentation there appears to be disagreement about whether boolean literals (``True`` and ``False``) or the special value ``None`` should appear with zero, single, or double backticks. 
 
 To resolve any ambiguity, we adopt the convention of presenting all three in doube backticks. 
-
 
 Tutorials 
 --------
