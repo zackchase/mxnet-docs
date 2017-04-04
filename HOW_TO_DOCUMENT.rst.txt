@@ -29,7 +29,7 @@ For variable names, function names, or class names, we observe the NumPy convent
 
 However, whenever code is invoked, even to retrieve an attribute of an object, we present this in double backticks, e.g.,  ``x.attribute``. 
 
-Note: NDArray is a class name. When standing alone (not in a code block) it should always appear in single backticks. ``NDArray``s
+Note: NDArray is a class name. When standing alone (not in a code block) it should always appear in single backticks.
 
 True, False, and None 
 ```````````````
