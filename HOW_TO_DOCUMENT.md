@@ -2,7 +2,31 @@ This document provides guidelines for documenting _MXNet_.
 
 ## APIs
 
-For docstrings, we adhere to the NumPy documentation guidelines (https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt).
+For docstrings, we adhere to the [NumPy documentation guidelines](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt).
+
+Please note that we observe the following additional conventions:
+
+### Import Conventions
+In addition to importing 
+```
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+```
+We also assume that mxnet has been imported in the following way: 
+```
+import mxnet as mx
+```
+
+### Variable names, functions, class names, and tuples of returned values
+For variable names, function names, or class names, we observe the NumPy convention of presenting them in single backticks.
+
+However, whenever code is invoked, even to retrieve an attribute of an object, we present this in double backticks, e.g.,  ``x.attribute``.
+
+### True, False, None
+Throughout the NumPy documentation there appears to be disagreement about whether boolean literals (``True`` and ``False``) or the special value ``None`` should appear with zero, single, or double backticks. 
+
+To resolve any ambiguity, we adopt the convention of presenting all three in doube backticks. 
 
 
 
