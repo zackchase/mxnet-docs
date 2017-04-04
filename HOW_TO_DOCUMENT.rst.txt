@@ -32,7 +32,7 @@ However, whenever code is invoked, even to retrieve an attribute of an object, w
 Note: NDArray is a class name. When standing alone (not in a code block) it should always appear in single backticks.
 
 To refer to multiple instances of a class, inclose the class name in single back ticks (but not the 's'). 
-Example: a list of `NDArray`s,
+Example: a list of `NDArray`s - `NDArray`,
 
 
 True, False, and None 
