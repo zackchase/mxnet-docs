@@ -13,9 +13,9 @@ The following topics explain basic concepts and provide procedures for specific 
 ## Modeling
 * [How do I fine-tune pre-trained models to a new dataset?](http://mxnet.io/how_to/finetune.html)
 
-* [How to use MXNet on variable input length/size (bucketing)](http://mxnet.io/how_to/bucketing.html)
+* [How do I work with variable-length input in _MXNet_ (bucketing)?](http://mxnet.io/how_to/bucketing.html)
 
-* [How do I create new operators with _MXNet_](new_op.md)
+* [How do I create new operators with _MXNet_?](new_op.md)
 
 * [How do I visualize the neural networks as computation graph?](http://mxnet.io/how_to/visualize_graph.html)
 
@@ -25,7 +25,7 @@ The following topics explain basic concepts and provide procedures for specific 
 
 * [How can I train with multiple GPUs with model parallelism?](http://mxnet.io/how_to/model_parallel_lstm.html)
 
-* [How to use nnpack improve cpu performance of _MXNet_](http://mxnet.io/how_to/nnpack.html)
+* [Can I use nnpack to improve CPU performance of _MXNet_](http://mxnet.io/how_to/nnpack.html)
 
 
 ## Deployment Environments
@@ -35,6 +35,6 @@ The following topics explain basic concepts and provide procedures for specific 
 
 * [What are best _MXNet_ data-handling practices for improving speed?](http://mxnet.io/how_to/perf.html)
 
-* [How to use _MXNet_ within a Matlab environment](https://github.com/dmlc/mxnet/tree/master/matlab)
+* [How to use _MXNet_ within a Matlab environment?](https://github.com/dmlc/mxnet/tree/master/matlab)
 
 * [How to use _MXNet_ in a browser using Java Script](https://github.com/dmlc/mxnet.js/)
