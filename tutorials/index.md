@@ -16,3 +16,16 @@ Each tutorial contains a high-quality working examples,
 accessible both as Jupyter notebooks and as clean code examples.
 Feel free to grab these implementations as starting points
 for building your own projects with _MXNet_.
+
+## Basic
+* [Linear Regression - House Prices](http://mxnet.io)
+* [Logistic Regression - Handwritten Digits](http://mxnet.io)
+* [Multilayer Perceptron - Handwritten Digits](http://mxnet.io)
+* [Convolutional Neural Networks (Simple) - Handwritten Digits](http://mxnet.io)
+* [Convolutional Neural Networks (Advanced) - House Numbers](http://mxnet.io)
+* [Recurrent Neural Networks - Character-level Language Modeling](http://mxnet.io)
+
+## Advanced
+* [Sequence to Sequence RNNs - English to French Translation](http://mxnet.io)
+* [Generative Adversarial Networks - Synthesizing Pictures of Faces](http://mxnet.io)
+* [Deep Q-Learning (DQN) - Playing Atari with Deep Learning](http://mxnet.io)
