@@ -25,7 +25,7 @@ The following topics explain basic concepts and provide procedures for specific 
 
 * [How can I train with multiple GPUs with model parallelism?](http://mxnet.io/how_to/model_parallel_lstm.html)
 
-* [How to use nnpack improve cpu performance of MXNet](http://mxnet.io/how_to/nnpack.html)
+* [How to use nnpack improve cpu performance of _MXNet_](http://mxnet.io/how_to/nnpack.html)
 
 
 ## Deployment Environments
