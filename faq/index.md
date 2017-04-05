@@ -35,6 +35,6 @@ The following topics explain basic concepts and provide procedures for specific 
 
 * [What are best _MXNet_ data-handling practices for improving speed?](http://mxnet.io/how_to/perf.html)
 
-* [How to use MXNet within a Matlab environment](https://github.com/dmlc/mxnet/tree/master/matlab)
+* [How to use _MXNet_ within a Matlab environment](https://github.com/dmlc/mxnet/tree/master/matlab)
 
-* [How to use MXNet in a browser using Java Script](https://github.com/dmlc/mxnet.js/)
+* [How to use _MXNet_ in a browser using Java Script](https://github.com/dmlc/mxnet.js/)
