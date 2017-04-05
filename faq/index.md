@@ -15,8 +15,7 @@ The following topics explain basic concepts and provide procedures for specific 
 
 * [How to use MXNet on variable input length/size (bucketing)](http://mxnet.io/how_to/bucketing.html)
 
-* [How do I create new operatorys with _MXNet_](new_op.md)
-*Provides an example of a custom layer along with the steps required to define each part of the layer. It includes a breakdown of the parameters involved, calls out possible optimizations, and provides a link to the complete code for the example.*
+* [How do I create new operators with _MXNet_](new_op.md)
 
 * [How do I visualize the neural networks as computation graph?](http://mxnet.io/how_to/visualize_graph.html)
 
