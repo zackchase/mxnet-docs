@@ -4,13 +4,13 @@ In _MXNet_, we primarily work with data via `NDArray` objects. Each `NDArray` co
 a multidimensional array of homogenous data. Put simply, this just means that all elements 
 of a given NDArray must be of the same type most often, we'll be working with floating point numbers.
 
-As concrete examples, we could store a single vector as a 1D `NDArray`, 
-or a table of values, formally known as a matrix, as a 2D `NDArray`. 
+As concrete examples, we could store a single _vector_ as a 1D `NDArray`, 
+or a table of values, formally known as a _matrix_, as a 2D `NDArray`. 
 In deep learning, we often have to work with higher-dimensional arrays. 
 Images, for example consist of 3D `NDArrays`,
 with separate dimensions corresponding to the height, width, and channel (red, green and blue). 
 And when we have a dataset of multiple images, we might store this object in a 4D array.
-When the number of dimensions exceeds 2, we call these objects tensors.
+When the number of dimensions exceeds 2, we call these objects _tensors_.
 
 Of course, storing data isn't very exciting if you can't do anything interesting with it. 
 The `NDArray` module supports a large number of optimized functions
