@@ -1,11 +1,23 @@
-# NDArray: NumPy-style Tensor Computations on CPUs and GPUs
+# MXNet Basics - Imperative Programming with NDArray
 
-In MXNet, `NDArray` is the basic operational unit for matrix and tensor
-computations. It is similar to `numpy.ndarray`, but it has two additional
-features:
+In _MXNet_, we work with data via `NDArray` objects. An `NDArray` stores
+a multideminsional array of homogenous data. This means that all elements 
+of a given `NDArray` must be of the same type.
 
-- Multiple device support: All operations can be run on various devices, including CPU and GPU cards.
-- Automatic parallelization: All operations are automatically executed in parallel with each other.
+Matrices could be stored as 2D `NDArrays` images could be stored as 3D `NDArrays`.
+The three dimensions correspond to the height, width, and channel (red, green and blue). 
+In machine learning, we typically refer to arrays with greater than 2 dimensions as tensors.
+
+Of course, storing data isn't very exciting if you can't do anything interesting with it. 
+The `NDArray` module supports a large number of optimized functions
+for manipulating and computing upon their data.
+
+You might notice that _MXNet_'s `NDArray` is similar to `numpy.ndarray`.
+However, _MXNet_ add the following important features, 
+both of which are essential for working with neural networks: 
+
+* Multiple device support: All operations can be run on various devices, including CPU and GPU cards.
+* Automatic parallelization: All operations are automatically executed in parallel with each other.
 
 ## Creation and Initialization
 
