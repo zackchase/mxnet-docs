@@ -10,7 +10,8 @@ In machine learning, we typically refer to arrays with greater than 2 dimensions
 
 Of course, storing data isn't very exciting if you can't do anything interesting with it. 
 The `NDArray` module supports a large number of optimized functions
-for manipulating and computing upon their data.
+for manipulating and computing upon their data. These include funamdental mathematical operations 
+and also some specialized functions motivated by common use cases in neural networks. 
 
 You might notice that _MXNet_'s `NDArray` is similar to `numpy.ndarray`.
 However, _MXNet_ additionally provides the following important features:
@@ -181,13 +182,13 @@ following example, `a+=1` and `c*=3` can be executed in parallel, but `a+=1` and
     c *= 3
  ```
 
-Luckily, MXNet can automatically resolve the dependencies and
-execute operations in parallel with correctness guaranteed. In other words, we
-can write a program as if it is using only a single thread, and MXNet will
-automatically dispatch it to multiple devices, such as multiple GPU cards or multiple
-computers.
+This where _MXNet_'s power lies: it automatically resolves dependencies and
+execute operationss in parallel while guaranteeding correctness. 
+In other words, you can write a program without explicitly addressing threading.
+_MXNet_ will take the program, intelligently analyze the computation, 
+and strategically dispatch tasks to multiple devices (GPUs, multiple machines, etc).
 
-MXNet achieves this by lazy evaluation. Any operation we write down is issued to a
+_MXNet_ achieves this by lazy evaluation. Any operation we write down is issued to a
 internal engine, and then returned. For example, if we run `a += 1`, it
 returns immediately after pushing the plus operation to the engine. This
 asynchronism allows us to push more operations to the engine, so it can determine
