@@ -1,12 +1,16 @@
 # _MXNet_ Basics - NDArray
 
-In _MXNet_, we work with data via `NDArray` objects. An `NDArray` stores
-a multidimensional array of homogenous data. This means that all elements 
-of a given `NDArray` must be of the same type.
+In _MXNet_, we primarily work with data via `NDArray` objects. Each `NDArray` consists of
+a multidimensional array of homogenous data. Put simply, this just means that all elements 
+of a given NDArray must be of the same type.
 
-Matrices could be stored as 2D `NDArrays` images could be stored as 3D `NDArrays`.
-The three dimensions correspond to the height, width, and channel (red, green and blue). 
-In machine learning, we typically refer to arrays with greater than 2 dimensions as tensors.
+As concrete examples, we could store a single vector as a 1D `NDArray`, 
+or a table of values, formally known as a matrix, as a 2D `NDArray`. 
+In deep learning, we often have to work with higher-dimensional arrays. 
+Images, for example consist of 3D `NDArrays`,
+with separate dimensions corresponding to the height, width, and channel (red, green and blue). 
+And when we have a dataset of multiple images, we might store this object in a 4D array.
+When the number of dimensions exceeds 2, we call these objects tensors.
 
 Of course, storing data isn't very exciting if you can't do anything interesting with it. 
 The `NDArray` module supports a large number of optimized functions
@@ -19,7 +23,8 @@ However, _MXNet_ additionally provides the following important features:
 * Multiple device support: `NDArray` runs operations on various devices, including CPU and GPU cards.
 * Automatic parallelization: These operations executed in parallel with each other automatically.
 
-In short, _MXNet_'s `NDArray` supports the familiar imperative programming interface of NumPy while supporting the blistering speed required to execute state-of-the-art deep learning algorithms.  
+In short, _MXNet_'s `NDArray` supports the familiar imperative programming interface of NumPy 
+while providing the blistering speed required to execute state-of-the-art deep learning algorithms.  
 
 ## Creation and Initialization
 
@@ -44,7 +49,7 @@ They can be initialized in various ways:
     >>> b[:] = 2 # set all elements of b to 2
 ```
 
-We can copy the value from one `NDArray` to another, even if they are located on different devices:
+We can copy the value from one NDArray to another, even if they are located on different devices:
 
 ```python
     >>> a = mx.nd.ones((2, 3))
