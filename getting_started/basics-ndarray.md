@@ -1,4 +1,4 @@
-# MXNet Basics - NDArray
+# _MXNet_ Basics - NDArray
 
 In _MXNet_, we work with data via `NDArray` objects. An `NDArray` stores
 a multideminsional array of homogenous data. This means that all elements 
