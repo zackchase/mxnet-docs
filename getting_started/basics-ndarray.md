@@ -1,7 +1,7 @@
 # _MXNet_ Basics - NDArray
 
 In _MXNet_, we work with data via `NDArray` objects. An `NDArray` stores
-a multideminsional array of homogenous data. This means that all elements 
+a multidimensional array of homogenous data. This means that all elements 
 of a given `NDArray` must be of the same type.
 
 Matrices could be stored as 2D `NDArrays` images could be stored as 3D `NDArrays`.
@@ -13,11 +13,12 @@ The `NDArray` module supports a large number of optimized functions
 for manipulating and computing upon their data.
 
 You might notice that _MXNet_'s `NDArray` is similar to `numpy.ndarray`.
-However, _MXNet_ add the following important features, 
-both of which are essential for working with neural networks: 
+However, _MXNet_ additionally provides the following important features:
 
-* Multiple device support: All operations can be run on various devices, including CPU and GPU cards.
-* Automatic parallelization: All operations are automatically executed in parallel with each other.
+* Multiple device support: `NDArray` runs operations on various devices, including CPU and GPU cards.
+* Automatic parallelization: These operations executed in parallel with each other automatically.
+
+In short, _MXNet_'s `NDArray` supports the familiar imperative programming interface of NumPy while supporting the blistering speed required to execute state-of-the-art deep learning algorithms.  
 
 ## Creation and Initialization
 
