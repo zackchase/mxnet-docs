@@ -2,7 +2,7 @@
 
 In _MXNet_, we primarily work with data via `NDArray` objects. Each `NDArray` consists of
 a multidimensional array of homogenous data. Put simply, this just means that all elements 
-of a given NDArray must be of the same type most often, we'll be working with floating point numbers.
+of a given NDArray must be of the same type. Most often, we'll be working with floating point numbers.
 
 As concrete examples, we could store a single _vector_ as a 1D `NDArray`, 
 or a table of values, formally known as a _matrix_, as a 2D `NDArray`. 
