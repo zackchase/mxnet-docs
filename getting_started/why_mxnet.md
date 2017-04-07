@@ -13,10 +13,26 @@ It might not come as surprise that researchers
 have investigated neural networks for decades.
 Warren McCulloch and Walter Pitts
 suggested the forerunner of todays artificial neurons back in 1943.
+Each neuron is connected to other neurons along _edges_, analogous to the synapses that connect real neurons. 
+And associated with each edge is a _weight_ that indicates whether the connection is excitatory or inhibitatory and the strength of the connection. 
+
+![alt_text](img/artificial-neuron.png)
+
+In the 1980s, the modern version of neural networks took shape.
+Researchers arranged artificial neurons into _layers_.
+Neurons in any layer get input from the neurons in the layers below them.
+And, in turn, their output feeds into the neurons in the layer above.
+Typically, the lowest layer represents the _input_ to a neural network.
+After computing the values of each layer, the _output_ values are read out from the topmost layer.
+The behavior of the network is determined by the setting of the weights. 
+And the process of _learning_ in neural networks 
+is precisely the process of searching for good settings of these _weights_.
+
+All that we need is an algorithm that tells us how to perform this search.
 And since David Rumelhart and colleagues
-introduced the _backpropagation_ learning algorithm to train them,
+introduced the _backpropagation_ learning algorithm to train neural networks,
 nearly all the major ideas have been in place.
-But for many years neural networks took a backseat 
+Still, for many years neural networks took a backseat 
 to classical statistical methods like logistic regression and support vector machines (SVMs).
 So you might reasonably ask, what's changed to garner such interest?
 
