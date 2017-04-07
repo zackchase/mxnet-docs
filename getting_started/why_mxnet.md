@@ -78,26 +78,34 @@ Neural networks are just functions for transforming input arrays `X` into output
 In the case of image classification, `X` might represent the pixel values of an image, and `Y` might represent the corresponding probabilities that the image belongs to each of `10` classes.
 For language translation, `X` and `Y` both might denote sequences of words. We'll revisit the way you might represent sequences in subsequent tutorials - so for now it's safe to think of `X` and `Y` as fixed length vectors.
 
-To perform this mapping, neural networks execute alternating layers of linear and nonlinear transformations:
+To perform this mapping, neural networks stack _layers_ of computation. Each layer consists of a linear function followed by a nonlinear transformation. In _MXNet_ we might express this as:
 ~~~~
 hidden_linear = mx.sym.dot(X, W)
 hidden_activation = mx.sym.tanh(hidden_linear)
 ~~~~
-The linear transformations consist of multiplication by parameter arrays (`W` above). When we talk about learning we mean finding the right set of values for `W`.
-With just one layer, we can implement the familiar family of linear models, including linear and logistic regression, linear support vector machines (SVMs), and the perceptron algorithm. With more layers and a few clever constraints, we can implement all of today's state-of-the-art deep learning techniques.
+The linear transformations consist of multiplication by parameter arrays (`W` above). 
+When we talk about learning we mean finding the right set of values for `W`.
+With just one layer, we can implement the familiar family of linear models, 
+including linear and logistic regression, linear support vector machines (SVMs), and the perceptron algorithm.
+With more layers and a few clever constraints, we can implement all of today's state-of-the-art deep learning techniques.
 
-Of course, tens or hundreds of matrix multiplications can be computationally taxing. Generally, these linear operations are the computational bottleneck.
+Of course, tens or hundreds of matrix multiplications can be computationally taxing. 
+Generally, these linear operations are the computational bottleneck.
 Fortunately, linear operators can be parallelized trivially across the thousands of cores on a GPU.
 But low-level GPU programming requires specialized skills that are not common even among leading researchers in the ML community. Moreover, even for CUDA experts, implementing a new neural network architecture shouldn't require weeks of programming to implement low-level linear algebra operations. That's where _MXNet_ comes in.
 *  _MXNet_ provides optimized numerical computation for GPUs and distributed ecosystems, from the comfort of high-level environments like Python and R
 * _MXNet_ automates common workflows, so standard neural networks can be expressed concisely in just a few lines of code
 
-Now let's take a closer look at the computational demands of neural networks and give a sense of how _MXNet_ helps us to write better, faster, code.
-Say we have a neural network trained to recognize spam from the content of emails. The email content may be streaming from an online service (at inference time) from a large offline dataset __D__ (at training time). In either case, the dataset often must be managed by the CPU.
+Now let's take a closer look at the computational demands of neural networks 
+and give a sense of how _MXNet_ helps us to write better, faster, code.
+Say we have a neural network trained to recognize spam from the content of emails. 
+The emails may be streaming from an online service (at inference time),
+or from a large offline dataset __D__ (at training time). 
+In either case, the dataset typically must be managed by the CPU.
 
 ![alt text](img/architecture.png)
 
-To compute the transformation of a neural network quickly, we need need both the parameters and data points to make it into GPU memory. For each example _X_, the parameters are the same. Moreover the size of the model tends to dwarf the size of an individual example. So we might arrive at the natural insight that parameters should always live on the GPU, even if the dataset itself must live on the CPU or stream in. This prevents IO from becoming the bottleneck during training or inference.
+To compute the transformation of a neural network quickly, we need need both the parameters and data points to make it into GPU memory. For any example _X_, the parameters _W_ are the same. Moreover the size of the model tends to dwarf the size of an individual example. So we might arrive at the natural insight that parameters should always live on the GPU, even if the dataset itself must live on the CPU or stream in. This prevents IO from becoming the bottleneck during training or inference.
 
 Fortunately, _MXNet_ makes this kind of assignment easy.
 ~~~~
