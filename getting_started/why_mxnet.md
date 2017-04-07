@@ -16,10 +16,12 @@ suggested the forerunner of todays artificial neurons back in 1943.
 And since David Rumelhart and colleagues
 introduced the _backpropagation_ learning algorithm to train them,
 nearly all the major ideas have been in place.
+But for many years neural networks took a backseat 
+to classical statistical methods like logistic regression and support vector machines (SVMs).
 So you might reasonably ask, what's changed to garner such interest?
 
 ## Scale and Computation
-While the science has marched forward, the two biggest factors driving innovation in deep learning now are data and computation.
+The two biggest factors driving innovation in deep learning now are data and computation.
 With distributed cloud computing and parallelism across GPU cores,
 we can train models millions of times faster than researchers could in the 1980s.
 The availability of large, high-quality datasets is another factor driving the field forward.
@@ -27,8 +29,13 @@ In the 1990s, the best datasets in computer vision had thousands of low-resoluti
 Today, researchers cut their teeth on ImageNet, a massive dataset containing millions of high-resolution images from a thousand distinct classes.
 The falling price of storage and high network bandwidth
 make it affordable to work with big data at will.
-And it turns out the methods that recognize patterns best on microscopic datasets
-are not the same methods that dominate on web-scale data.
+
+In this new world, with bigger datasets and abundant computation, 
+neural networks dominate on most pattern recognition problems.
+Over the last five years, neural networks have come to dominate on nearly every problem in computer vision,
+replacing classical models and hand-engineered features.
+Similarly, nearly every production speech recognition system now relies on neural networks, 
+where replacing the hidden Markov models that previously held sway.
 
 ![alt text](img/nvidia-gpus.jpg)
 
