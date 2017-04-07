@@ -16,7 +16,7 @@ suggested the forerunner of todays artificial neurons back in 1943.
 Each neuron is connected to other neurons along _edges_, analogous to the synapses that connect real neurons. 
 And associated with each edge is a _weight_ that indicates whether the connection is excitatory or inhibitatory and the strength of the connection. 
 
-![alt_text](img/artificial-neuron.png)
+![alt_text](img/artificial-neuron-2.png)
 
 In the 1980s, the modern version of neural networks took shape.
 Researchers arranged artificial neurons into _layers_.
